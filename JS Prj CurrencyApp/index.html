@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <h1>Currency Converter</h1>
+    <form action="">
+        <div class="amount">
+            <p>Enter Amount</p>
+            <input type="" value="1">
+        </div>
+        <div class="drop-down">
+<!-- From -->
+            <div class="from">
+                <p>From</p>
+                <div class="select-container">
+                    <img src="https://flagsapi.com/US/flat/64.png" />
+                    <select name="from" id="" >
+                      <!-- filling from app.js -->
+
+                    </select>
+                </div>
+            </div>
+            <!-- From Ends -->
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            <!-- To -->
+            <div class="to">
+                <p>To</p>
+                <div class="select-container">
+                    <img src="https://flagsapi.com/IN/flat/64.png" alt="">
+                    <select name="to" id="">
+                      <!-- filling from app.js -->
+                    </select>
+                </div>
+            </div>
+        </div>
+<!-- msg show -->
+            <div class="msg">1USD = 97INR</div>
+            <button id="exg-rate">Get Exchange Rate</button>
+
+    </form>
+    <img src="img.png" height="250px" alt="">
+
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
