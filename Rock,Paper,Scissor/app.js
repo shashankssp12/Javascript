@@ -21,29 +21,37 @@ function compareSelection(){
 
     if(userSelection===compSelection){
         msgBox.innerText="It's a draw";
+        msgBox.style.backgroundColor = " rgb(30, 30, 81)";
     }
     else if(userSelection==="rock" && compSelection==="paper"){
-        msgBox.innerText="Computer Wins";
+        msgBox.innerText="You lost! Computer's "+compSelection+" beats your "+ userSelection;
+        msgBox.style.backgroundColor = "red";
         compScore++;
     }
      else if(userSelection==="rock" && compSelection==="scissors"){
         msgBox.innerText="User Wins";
+        msgBox.style.backgroundColor = "green";
+
         userScore++;
      }
      else if(userSelection==="paper" && compSelection==="rock"){
         msgBox.innerText = "User Wins"
+        msgBox.style.backgroundColor = "green";
         userScore++
      }
      else if(userSelection==="paper" && compSelection==="scissors"){
         msgBox.innerText="Computer Wins";
+        msgBox.style.backgroundColor = "red";
         compScore++;
       }
      else if(userSelection==="scissors" && compSelection==="rock"){
         msgBox.innerText="Computer Wins";
+        msgBox.style.backgroundColor = "red";
         compScore++;
       }
        else if(userSelection==="scissors" && compSelection==="paper"){
         msgBox.innerText="User Wins";
+        msgBox.style.backgroundColor = "green";
         userScore++;
       }
         userScoreBox.innerText = userScore;
